@@ -53,6 +53,8 @@ form input{
     border-radius: 4px;
     margin-bottom: 16px;
     border: none;
+    box-sizing: border-box;
+    padding: 10px;
 }
 form textarea{
     width:  284px;
@@ -62,6 +64,8 @@ form textarea{
     border-radius: 4px;
     margin-bottom: 16px;
     border: none;
+    box-sizing: border-box;
+    padding: 10px;
 }
 form .span{
     background: #FF8484;
@@ -88,6 +92,7 @@ form .add-btn{
 /* -------------cards--------------- */
 .cards{
     display: flex;
+    position: relative;
     height: 423px;
     margin-top: 110px;
     flex-direction: column;
@@ -99,6 +104,13 @@ form .add-btn{
 .cards img{
     width: 332px;
     height: 200px;
+}
+.cards .deleted{
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    left: 310px;
+    top: -10px;
 }
 .text{
     width: 332px;

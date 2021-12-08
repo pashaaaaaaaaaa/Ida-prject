@@ -1,0 +1,133 @@
+.big-container{
+    background:white;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.add{
+    /* border: 1px solid red; */
+    display: flex;
+    padding: 0;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin-top: 32px;
+    margin-left: 32px;
+    margin-right: 16px;
+}
+h2{
+    color: #3F3F3F;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+form{
+    /* border: 1px solid red; */
+    width: 332px;
+    /* height: 440px; */
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+    align-items: center;
+    background: #FFFEFB;
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.04), 0px 6px 10px rgba(0, 0, 0, 0.02);
+    border-radius: 4px;
+}
+form p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #49485E;
+    font-size: 10px;
+    text-align: left;
+    margin-bottom: 4px;
+}
+form input{
+    width: 284px;
+    height: 36px;
+    background: #FFFEFB;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: none;
+}
+form textarea{
+    width:  284px;
+    height: 108px;
+    background: #FFFEFB;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: none;
+}
+form .span{
+    background: #FF8484;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    top: 10px;
+    position: absolute;
+}
+form .add-btn{
+    background: #EEEEEE;
+    width: 284px;
+    padding-top: 10px;
+    padding-bottom: 11px;
+    border-radius: 10px;
+    color: #B4B4B4;
+    border: none;
+}
+.one, .two, .three, .four{
+    position: relative;
+
+}
+
+/* -------------cards--------------- */
+.cards{
+    display: flex;
+    height: 423px;
+    margin-top: 110px;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: auto;
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.04), 0px 6px 10px rgba(0, 0, 0, 0.02);
+    border-radius: 4px;
+}
+.cards img{
+    width: 332px;
+    height: 200px;
+}
+.text{
+    width: 332px;
+    box-sizing: border-box;
+    padding-left: 16px;
+    border-radius:0px 0px 4px 4px ;
+}
+.cards .text h4{
+    margin: 0;
+    margin-top: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    color: #3F3F3F;
+    margin-bottom: 16px;
+}
+.text p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #3F3F3F;
+    font-size: 16px;
+    margin-bottom: 32px;
+    line-height: 20px;
+}
+.text .price{
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    line-height: 30px;
+    color: #3F3F3F;
+    margin-bottom: 24px;
+}

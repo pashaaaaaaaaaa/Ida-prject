@@ -14,24 +14,25 @@
             <form>
                 <label for="" class="one">
                     <p>Наименование товара <img src="img/radius.svg" alt="" class="span"></p>
-                    <input type=" text" placeholder="Введите наименование товара">
+                    <input type=" text" name="name" placeholder="Введите наименование товара" required>
                 </label>
                 <label for="" class="two">
                     <p>Введите наименование товара </p>
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Введите описание товара"></textarea>
+                    <textarea name="descr" id="" cols="30" rows="10" placeholder="Введите описание товара"></textarea>
                 </label>
                 <label for="" class="three">
                     <p>Ссылка на изображение товара <img src="img/radius.svg" alt="" class="span"></p>
-                    <input type="text" placeholder="Введите ссылку">
+                    <input name="image" type="text" placeholder="Введите ссылку" required>
                 </label>
                 <label for="" class="four">
                     <p>Цена товара <img src="img/radius.svg" alt="" class="span"></p>
-                    <input type="number" placeholder="Введите цену">
+                    <input name="price" type="number" placeholder="Введите цену" required>
                 </label>
-                <button class="add-btn">Добавить товар</button>
+                <button class="add-btn">Добавить товара</button>
             </form>
         </section>
-        <section class="cards">
+        <section class="cardss">
+            <div class="cards">
             <img src="img/photo.svg" alt="picture">
             <img src="img/deleted.svg" alt="" class="deleted">
             <div class="text">
@@ -40,6 +41,7 @@
                 <p class="price">
                     10 000 руб
                 </p>
+            </div>
             </div>
         </section>
     </div>

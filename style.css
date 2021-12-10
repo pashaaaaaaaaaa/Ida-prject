@@ -83,6 +83,60 @@ form .add-btn{
     border-radius: 10px;
     color: #B4B4B4;
     border: none;
+    transition: 0.5ms ease all;
+    outline: none;
+    overflow: hidden;
+    z-index:1;
+}
+.add-btn:hover{
+    animation: si-button-pulse 0.8s 0s ease-out 1;
+    -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    border: 1.5px solid gold;
+    color: gold;
+    font-weight: bold;
+}
+@keyframes si-button-pulse {
+    from {box-shadow: 0 0 8px 6px #ffad1f, 0 0 12px 14px #ffad1f;}
+
+    to {box-shadow: 0 0 10px 4px rgba(255, 48, 26, 0), 0 0 5px 30px rgba(255, 48, 26, 0);}
+}
+
+.add-btn:before ,
+.add-btn:after 
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-top: 30px solid #ffffff;
+    border-bottom: 30px solid #ffffff;
+    z-index: -1;
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+}
+.add-btn:before{
+    border-right: 30px solid transparent;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+}
+.add-btn:after{
+    border-left: 30px solid transparent;
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+}
+
+.add-btn:hover:before{
+    -webkit-transform: translateX(-30%);
+    transform: translateX(-30%);
+}
+
+.add-btn:hover:after
+{
+    -webkit-transform: translateX(30%);
+    transform: translateX(30%);
 }
 .one, .two, .three, .four{
     position: relative;
@@ -90,8 +144,13 @@ form .add-btn{
 }
 
 /* -------------cards--------------- */
-.cards{
+.cardss{
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.cards{
+    display: none;
     position: relative;
     height: 423px;
     margin-top: 110px;
@@ -111,7 +170,17 @@ form .add-btn{
     height: 32px;
     left: 310px;
     top: -10px;
+    animation: anim 1s linear infinite;
+
 }
+@keyframes anim{
+    0%{ transform: rotate(0deg);font-size: 25px;}
+    20%{ transform: rotate(1deg);font-size: 26px;}
+    40%{ transform: rotate(2deg);font-size: 27px;}
+    60%{ transform: rotate(1deg);font-size: 26px;}
+    80%{ transform: rotate(-1deg);font-size: 24px;}
+    100%{ transform: rotate(0deg);font-size: 25px;}
+    }
 .text{
     width: 332px;
     box-sizing: border-box;
